@@ -11,7 +11,7 @@
       "name": "mrbeast-thumbnail-skill",
       "source": "./",
       "description": "MrBeast-style YouTube thumbnail generator: plan high-CTR thumbnails, titles, and AI image prompts for any video, game, or project.",
-      "version": "0.2.1",
+      "version": "0.3.0",
       "license": "MIT",
       "keywords": [
         "youtube-thumbnail",

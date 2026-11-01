@@ -12,6 +12,10 @@ FONT_CANDIDATES = [
     "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
     "DejaVuSans-Bold.ttf", "Arial Bold.ttf", "arialbd.ttf",
 ]
+PRESETS = {
+    "youtube": "1280x720", "roblox": "1920x1080", "steam-capsule": "1232x706",
+    "steam-header": "920x430", "itch": "630x500", "social": "1600x900",
+}
 ANCHORS = {"top": "ma", "bottom": "md", "left": "lm", "right": "rm", "center": "mm"}
 
 
@@ -33,11 +37,26 @@ def cover(img, w, h):
     return img.crop((left, top, left + w, top + h))
 
 
+def add_badge(img, text="12:34"):
+    """Draw a YouTube-style video length badge in the bottom-right corner."""
+    draw = ImageDraw.Draw(img)
+    font = load_font(None, max(9, img.height // 9))
+    left, top, right, bottom = draw.textbbox((0, 0), text, font=font)
+    pad, margin = max(2, img.height // 40), max(3, img.height // 25)
+    x1, y1 = img.width - margin, img.height - margin
+    x0, y0 = x1 - (right - left) - 2 * pad, y1 - (bottom - top) - 2 * pad
+    draw.rounded_rectangle((x0, y0, x1, y1), radius=pad, fill=(0, 0, 0))
+    draw.text((x0 + pad - left, y0 + pad - top), text, font=font, fill=(255, 255, 255))
+    return img
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("input")
     p.add_argument("output")
-    p.add_argument("--size", default="1280x720", help="WxH, default 1280x720")
+    p.add_argument("--size", help="WxH, overrides --preset")
+    p.add_argument("--preset", choices=PRESETS, default="youtube",
+                   help="target size: " + ", ".join(f"{k} {v}" for k, v in PRESETS.items()))
     p.add_argument("--text", help="0 to 4 words, e.g. '100 DAYS'")
     p.add_argument("--position", choices=ANCHORS, default="top")
     p.add_argument("--color", default="#FFE600")
@@ -49,7 +68,7 @@ def main():
     p.add_argument("--preview", action="store_true", help="also write <output>_phone.png at feed size")
     a = p.parse_args()
 
-    w, h = (int(v) for v in a.size.lower().split("x"))
+    w, h = (int(v) for v in (a.size or PRESETS[a.preset]).lower().split("x"))
     img = cover(Image.open(a.input).convert("RGB"), w, h)
     img = ImageEnhance.Color(img).enhance(a.saturation)
     img = ImageEnhance.Contrast(img).enhance(a.contrast)
@@ -75,6 +94,8 @@ def main():
 
     if a.preview:
         small = img.resize((210, round(210 * h / w)), Image.LANCZOS)
+        if a.preset == "youtube" and not a.size:
+            add_badge(small)
         phone = small.resize((small.width * 2, small.height * 2), Image.NEAREST)
         prev = out.with_name(f"{out.stem}_phone{out.suffix}")
         phone.save(prev)

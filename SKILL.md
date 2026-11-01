@@ -10,7 +10,7 @@ description: |
   1280x720 image.
 license: MIT
 metadata:
-  version: "0.2.1"
+  version: "0.3.0"
 ---
 
 # MrBeast thumbnail skill
@@ -28,7 +28,8 @@ Read this file once. Open a reference only when the task needs it:
 - [references/packaging-rules.md](references/packaging-rules.md): the five patterns, archetypes, formats, title wording, faces, color, and testing. Includes the lessons from MrBeast's leaked production handbook.
 - [references/image-prompts.md](references/image-prompts.md): prompt recipes for Midjourney, DALL-E, Flux, Stable Diffusion, Ideogram, and Nano Banana Pro, plus how to use a face photo.
 - [references/projects-and-games.md](references/projects-and-games.md): sizes and hooks for games, apps, repos, and store pages.
-- [scripts/thumbnail.py](scripts/thumbnail.py): crop to 16:9, add stroked text, and render a phone-size preview.
+- [scripts/thumbnail.py](scripts/thumbnail.py): crop to a platform size, add stroked text, and render a phone-size preview.
+- [scripts/feed.py](scripts/feed.py): show variants and competitors side by side in a mock phone feed.
 
 ## Step 1: Understand the project
 
@@ -143,8 +144,19 @@ python3 scripts/thumbnail.py art.png out.png --text "100 DAYS" --preview
 ```
 
 This writes `out.png` (1280x720) and `out_phone.png` (feed size, shown
-at 2x). Look at the phone preview. If the subject, emotion, or stake is
+at 2x, with a fake video length badge in the corner). For other
+placements use `--preset roblox`, `steam-capsule`, `steam-header`, `itch`,
+or `social`. Look at the phone preview. If the subject, emotion, or stake is
 not obvious there in under 3 seconds, fix it.
+
+To pick between variants, put them in a mock phone feed with 2 or 3
+competitor thumbnails from the same niche. The one you notice first is
+the one to test first:
+
+```bash
+python3 scripts/feed.py v1.png v2.png v3.png rival1.png rival2.png -o feed.png \
+  --titles "Title 1" "Title 2" "Title 3" "Rival 1" "Rival 2"
+```
 
 Judge the first render against the self-check before showing it. A
 render can look polished and still break the rules. Name what failed (for

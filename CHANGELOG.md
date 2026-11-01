@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0
+
+- `thumbnail.py --preset` exports YouTube, Roblox, Steam capsule, Steam header, itch.io, and social sizes. `--size` still overrides it.
+- The YouTube phone preview draws a video length badge, so text under the badge shows up as a problem.
+- New `scripts/feed.py` puts variants and competitor thumbnails in a mock phone feed (dark or `--light`) with titles, to pick which variant to test first.
+
 ## 0.2.1
 
 - Self-check: keep the bottom-right corner clear for YouTube's video length badge.

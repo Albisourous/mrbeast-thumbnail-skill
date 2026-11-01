@@ -49,7 +49,13 @@ pip install pillow
 python3 scripts/thumbnail.py art.png thumb.png --text "DAY 7" --preview
 ```
 
-You get `thumb.png` at 1280x720 and `thumb_phone.png` at YouTube feed size. If the phone preview takes more than 3 seconds to make sense, simplify the image. Run `python3 scripts/thumbnail.py -h` for position, color, font, and saturation options.
+You get `thumb.png` at 1280x720 and `thumb_phone.png` at YouTube feed size. If the phone preview takes more than 3 seconds to make sense, simplify the image. Run `python3 scripts/thumbnail.py -h` for position, color, font, and saturation options, and `--preset` for Roblox, Steam, itch.io, and social sizes.
+
+To compare your 3 variants against thumbnails already in your niche:
+
+```bash
+python3 scripts/feed.py v1.png v2.png v3.png rival.png -o feed.png --titles "Title 1" "Title 2" "Title 3" "Rival"
+```
 
 ## What's inside
 
@@ -59,7 +65,8 @@ You get `thumb.png` at 1280x720 and `thumb_phone.png` at YouTube feed size. If t
 | `references/packaging-rules.md` | The five patterns, archetypes, formats, titles, faces, color, testing, and lessons from MrBeast's production handbook |
 | `references/image-prompts.md` | Prompt skeleton and notes for Midjourney, DALL-E, Flux, SDXL, Ideogram, Nano Banana Pro |
 | `references/projects-and-games.md` | Sizes and hooks for games, apps, repos, and store pages |
-| `scripts/thumbnail.py` | Crop to 16:9, add stroked text, render a phone preview |
+| `scripts/thumbnail.py` | Crop to a platform size (`--preset`), add stroked text, render a phone preview |
+| `scripts/feed.py` | Compare variants and competitor thumbnails in a mock phone feed |
 | `scripts/validate.py` | Check that versions, descriptions, and links agree before a release |
 
 ## Sources
