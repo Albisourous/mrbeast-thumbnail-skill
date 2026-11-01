@@ -2,7 +2,7 @@
 
 An AI agent skill that makes MrBeast-style YouTube thumbnails, titles, and AI image prompts for any video, game, app, or project.
 
-Give it an idea, a script, or point it at a repo. It returns 3 finished packaging variants built on the rules MrBeast's team made famous: one focal subject, one loud emotion, a concrete stake, saturated color, and almost no text. Each variant has a title, a 3-element layout, a color plan, a ready-to-paste Midjourney / DALL-E / Flux prompt, and the first 5 seconds the content needs to pay off the click. If your agent can generate images, it makes them too, then adds text and checks the result at phone size.
+Give it an idea or a script, or point it at a repo. It returns 3 finished packaging variants built on the rules MrBeast's team made famous: one focal subject, one loud emotion, a concrete stake, saturated color, and almost no text. Each variant has a title, a 3-element layout, a color plan, a ready-to-paste Midjourney / DALL-E / Flux prompt, and the first 5 seconds the content needs to pay off the click. If your agent can generate images, it makes them too, then adds text and checks the result at phone size.
 
 Works for YouTube thumbnails, game devlogs, trailers, Steam capsules, Roblox and itch.io covers, app store banners, and launch posts.
 
@@ -49,7 +49,7 @@ pip install pillow
 python3 scripts/thumbnail.py art.png thumb.png --text "DAY 7" --preview
 ```
 
-You get `thumb.png` at 1280x720 and `thumb_phone.png` at YouTube feed size. If you cannot tell what is happening in the phone preview in 3 seconds, neither can a viewer. Run `python3 scripts/thumbnail.py -h` for position, color, font, and saturation options.
+You get `thumb.png` at 1280x720 and `thumb_phone.png` at YouTube feed size. If the phone preview takes more than 3 seconds to make sense, simplify the image. Run `python3 scripts/thumbnail.py -h` for position, color, font, and saturation options.
 
 ## What's inside
 

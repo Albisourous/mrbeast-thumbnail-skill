@@ -7,20 +7,20 @@ reading the whole file.
 
 - The thumbnail is a billboard on the busiest highway there is. Unlike a billboard, you get click and retention numbers back within hours.
 - More than 70 percent of YouTube views are on phones. A home-feed thumbnail is about 200x113 px. Design for a thumb, under a second of attention, and 30 other thumbnails on the same screen.
-- Thumbnail work is strategic art: it has to look good and it has to perform. A "beautiful" thumbnail can lose to an "ugly" one that reads faster.
-- High click-through rate means nothing if viewers leave. Optimize for clicks that turn into watch time.
+- A thumbnail has to look good and also get clicked. A "beautiful" thumbnail can lose to an "ugly" one that reads faster.
+- Optimize for clicks that turn into watch time. A high click-through rate with viewers leaving early still loses.
 
 ## The packaging philosophy
 
 1. **Click first.** Plan the thumbnail and title before you make the video. They set the explicit promise.
 2. **3-second rule.** On a small phone screen, a viewer must understand the premise and the tension in under 3 seconds.
 3. **3-element limit.** No more than 3 visual elements (for example face, object, setting). More creates a visual traffic jam.
-4. **Text is a hook, not a caption.** Minimize it or drop it. If you use it, add context ("Day #2", "$10,000") rather than repeating what the image or title already says.
+4. **Little or no text.** Cut it when the image already says it. If you use it, add context ("Day #2", "$10,000") rather than repeating what the image or title already says.
 
 ## The five patterns
 
 1. **One focal subject.** One thing the eye lands on: a pile of money, a giant object, a face, a car on fire. Blur, darken, or crop everything else. The subject is the brightest, most saturated, most in-focus element.
-2. **One exaggerated emotion.** Shock, triumph, disbelief, fear, joy. Dial it to 11. A slightly surprised face reads as nothing at feed size. The face should be at least 40 percent of the frame height. "Surprised and confused" is not a thumbnail; "losing my mind" is. A tight crop of any subject reacting (a pet, a character, a mascot) works the same way.
+2. **One exaggerated emotion.** Shock, triumph, disbelief, fear, joy. Dial it to 11. A slightly surprised face reads as nothing at feed size. The face should be at least 40 percent of the frame height. Pick one feeling: "losing my mind" reads at feed size, "surprised and confused" does not. A tight crop of any subject reacting (a pet, a character, a mascot) works the same way.
 3. **A visible stake or number.** Money ($1,000,000), time (24 hours, 100 days), scale (world's largest), opposition (1 vs 100), or consequence (or I lose everything). Numbers should be at least 80 px tall on a 1280x720 export.
 4. **Saturation and contrast for small screens.** Red, yellow, bright blue, deep black. Almost never muted tones. Use 1 or 2 hero colors on a complementary background.
 5. **Minimal, specific text.** 2 to 4 words, concrete: $10,000, CURSED, WORLD'S FASTEST, 24 HOURS, DON'T BLINK. Never a sentence. Bold heavy sans-serif with a thick stroke or shadow. Write 5 to 10 options and pick the shortest that still carries the hook.
@@ -84,12 +84,13 @@ saturation and contrast past what feels tasteful on a monitor.
 - YouTube Studio's "Test and compare" runs up to 3 thumbnails against each other and picks by watch time, which is the right metric.
 - Check every draft on a real phone, dimmed, at arm's length. If you cannot tell what is happening, neither can the viewer.
 
-## Do not just copy
+## Make it your own
 
-The next breakout creator will not look like everyone else. Use these
-rules as the system, then give the thumbnail its own identity: a
-signature color, a recurring character, a consistent layout viewers
-learn to recognize.
+MrBeast's thumbnail lead Chucky Appleby put it this way: "The person who
+ends up being the quote, unquote 'next MrBeast' is going to be doing
+something totally different." Use these rules, then give the thumbnail
+its own identity: a signature color, a recurring character, a layout
+viewers learn to recognize.
 
 ## Sources
 

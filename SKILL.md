@@ -45,8 +45,8 @@ with it and state your assumptions.
 ## Step 2: Find the hook
 
 Every thumbnail fits one of four archetypes. Pick the one that fits the
-project's real promise; do not force a stake the video or game cannot pay
-off.
+project's real promise. Never force a stake the video or game cannot
+pay off.
 
 | Archetype | Trigger | Example |
 | --- | --- | --- |
@@ -55,9 +55,10 @@ off.
 | Financial shock or extreme stakes | "What would I do?" | stacks of cash, a life-changing win or loss |
 | Bizarre action (the ketchup rule) | "Why would anyone do that?" | sitting in a bathtub of ketchup, not a front yard |
 
-Every project has a number. Find it: days, hours, dollars, players,
-levels, enemies, lines of code, percent. Concrete beats vague. "100
-Players" works. "This changes everything" does not.
+Every project has a number: days, hours, dollars, players, levels,
+enemies, lines of code, percent. Use it. A viewer can picture "100
+Players" in a glance; "This changes everything" gives them nothing to
+picture.
 
 ## Step 3: Write 3 packaging variants
 
@@ -95,8 +96,8 @@ Reject and rewrite any variant that fails one of these:
 - [ ] Thumbnail text is 4 words or fewer and does not repeat the title.
 - [ ] Title is 50 characters or fewer.
 - [ ] Still readable at phone feed size (about 200x113 px).
-- [ ] The video, game, or page can actually deliver the promise in the first 5 seconds. Clickbait that does not pay off kills retention.
-- [ ] The 3 variants look different from each other, not 3 versions of one shocked face.
+- [ ] The video, game, or page delivers the promise in the first 5 seconds. Viewers who feel tricked leave, and retention drops.
+- [ ] The 3 variants look different from each other. Three takes on one shocked face count as one variant.
 
 ## Step 5: Make the image (when tools allow)
 
@@ -122,6 +123,6 @@ which tool to paste them into.
 - Plan packaging before the video is made when you can. The thumbnail sets the promise the content must keep.
 - A face with real emotion beats no face. A tight crop beats a wide shot. For games, a character or mascot reacting works the same way.
 - Push saturation until it feels a little cartoonish on a desktop monitor. Muted thumbnails disappear on phones.
-- Clicks only count if people stay. Never promise what the content does not show.
-- Do not copy the trend blindly. Use the system, then make it look like this project, not like every other shocked-face thumbnail in the feed.
+- Never promise what the content does not show. A click is worth little if the viewer leaves in 10 seconds.
+- Use the rules, then give the project its own look: a signature color, a recurring character, a layout viewers learn to spot. Feeds are full of identical shocked faces.
 - Do not put real people's likenesses (celebrities, MrBeast himself) in generated images without permission. Use the user's own face, a character, or a generic person.
