@@ -26,7 +26,7 @@ that wins clicks and loses viewers in the first minute has failed.
 Read this file once. Open a reference only when the task needs it:
 
 - [references/packaging-rules.md](references/packaging-rules.md): the five patterns, archetypes, formats, title wording, faces, color, and testing. Includes the lessons from MrBeast's leaked production handbook.
-- [references/image-prompts.md](references/image-prompts.md): prompt recipes for Midjourney, DALL-E, Flux, Stable Diffusion, and Ideogram.
+- [references/image-prompts.md](references/image-prompts.md): prompt recipes for Midjourney, DALL-E, Flux, Stable Diffusion, Ideogram, and Nano Banana Pro, plus how to use a face photo.
 - [references/projects-and-games.md](references/projects-and-games.md): sizes and hooks for games, apps, repos, and store pages.
 - [scripts/thumbnail.py](scripts/thumbnail.py): crop to 16:9, add stroked text, and render a phone-size preview.
 

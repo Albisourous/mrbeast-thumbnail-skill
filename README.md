@@ -57,7 +57,7 @@ You get `thumb.png` at 1280x720 and `thumb_phone.png` at YouTube feed size. If t
 |---|---|
 | `SKILL.md` | The workflow: test the idea, find the hook, write 3 variants, self-check, make the image |
 | `references/packaging-rules.md` | The five patterns, archetypes, formats, titles, faces, color, testing, and lessons from MrBeast's production handbook |
-| `references/image-prompts.md` | Prompt skeleton and notes for Midjourney, DALL-E, Flux, SDXL, Ideogram |
+| `references/image-prompts.md` | Prompt skeleton and notes for Midjourney, DALL-E, Flux, SDXL, Ideogram, Nano Banana Pro |
 | `references/projects-and-games.md` | Sizes and hooks for games, apps, repos, and store pages |
 | `scripts/thumbnail.py` | Crop to 16:9, add stroked text, render a phone preview |
 | `scripts/validate.py` | Check that versions, descriptions, and links agree before a release |
