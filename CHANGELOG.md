@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.1
+
+- Self-check: keep the bottom-right corner clear for YouTube's video length badge.
+- projects-and-games.md links the current size specs for YouTube, Roblox, Steam, and itch.io.
+- Say that the phone preview is a quick check and the final image still needs a look on a real phone.
+- Add `scripts/validate.py` to check versions, descriptions, and links before a release.
+
 ## 0.2.0
 
 - Fold lessons from MrBeast's production handbook into the workflow: a new idea test step (ketchup vs front yard, simplicity, audience), title rules (strongest true verb, the content must match the packaging), and format guidance (show the question, not the answer).

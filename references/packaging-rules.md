@@ -108,7 +108,7 @@ saturation and contrast past what feels tasteful on a monitor.
 - YouTube Studio's "Test and compare" runs up to 3 thumbnails against each other and picks by watch time, which is the right metric.
 - Treat every rule here as a default to test. MrBeast's team switched many thumbnails from open-mouth to closed-mouth faces when the data said so, and his handbook asks readers to apply it "with a grain of salt".
 - Run drafts past as many people as you can before locking them, and make backups: if an idea has a 50/50 chance of working, write another.
-- Check every draft on a real phone, dimmed, at arm's length. If you cannot tell what is happening, neither can the viewer.
+- The `thumbnail.py --preview` image is a quick check on a monitor. Before publishing, also look at the final thumbnail on a real phone, dimmed, at arm's length. If you cannot tell what is happening, neither can the viewer.
 
 ## Keeping the promise
 

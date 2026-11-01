@@ -10,7 +10,7 @@ description: |
   1280x720 image.
 license: MIT
 metadata:
-  version: "0.2.0"
+  version: "0.2.1"
 ---
 
 # MrBeast thumbnail skill
@@ -124,6 +124,7 @@ Rewrite any variant that fails one of these:
 - [ ] Thumbnail text is 4 words or fewer and does not repeat the title.
 - [ ] Title is 50 characters or fewer, uses the strongest true verb, and every claim in it is true.
 - [ ] Readable at phone feed size (about 200x113 px).
+- [ ] Nothing important sits in the bottom-right corner, where YouTube puts the video length.
 - [ ] The payoff appears in the first 5 seconds and matches the thumbnail in color, object, and setting.
 - [ ] A format video shows the question, not the result.
 - [ ] In a comparison ($1 vs $1,000,000), the two sides look obviously different at feed size: size, color, condition, and material all contrast. Two similar-looking cars read as one car.

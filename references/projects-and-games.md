@@ -15,7 +15,11 @@ focal subject, one emotion, one stake, loud color, and almost no text.
 | App store screenshots | per store spec | first screenshot works like a thumbnail |
 | Social post or launch image | 1600x900 or 1200x675 | same rules, add the product name |
 
-Check the platform's current docs before exporting; sizes change.
+Sizes change. Check the current specs before exporting:
+[YouTube](https://support.google.com/youtube/answer/72431),
+[Roblox](https://create.roblox.com/docs/production/publishing/thumbnails),
+[Steam](https://partner.steamgames.com/doc/store/assets),
+[itch.io](https://itch.io/docs/creators/design).
 
 ## Finding the hook in a project
 
