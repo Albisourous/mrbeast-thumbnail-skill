@@ -37,7 +37,7 @@ Works for YouTube thumbnails, game devlogs, trailers, Steam capsules, Roblox and
   - **Background:** plain deep purple, soft glow behind the subject
 - **Color and lighting:** yellow and cyan hero colors on purple, cyan rim light, saturation pushed
 - **AI image prompt:** YouTube thumbnail, 16:9, hyper-saturated ...
-- **First 5 seconds:** open on the finished game running, then cut to day 1
+- **Payoff:** open on the finished game running, then cut to day 1
 ```
 
 ## Add text and check it on a phone
@@ -55,9 +55,8 @@ You get `thumb.png` at 1280x720 and `thumb_phone.png` at YouTube feed size. If t
 
 | File | Use it for |
 |---|---|
-| `SKILL.md` | The workflow: find the hook, write 3 variants, self-check, make the image |
-| `references/packaging-rules.md` | The five patterns, four archetypes, faces, color guide, titles, testing |
-| `references/production-handbook.md` | Lessons from MrBeast's leaked production handbook: metrics, titles, formats, retention by minute |
+| `SKILL.md` | The workflow: test the idea, find the hook, write 3 variants, self-check, make the image |
+| `references/packaging-rules.md` | The five patterns, archetypes, formats, titles, faces, color, testing, and lessons from MrBeast's production handbook |
 | `references/image-prompts.md` | Prompt skeleton and notes for Midjourney, DALL-E, Flux, SDXL, Ideogram |
 | `references/projects-and-games.md` | Sizes and hooks for games, apps, repos, and store pages |
 | `scripts/thumbnail.py` | Crop to 16:9, add stroked text, render a phone preview |

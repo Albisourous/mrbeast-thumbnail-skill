@@ -6,8 +6,8 @@ and warp text.
 
 ## Prompt skeleton
 
-Write one paragraph in this order. Lead with the subject; image models
-weigh early words most.
+Write one paragraph in this order. Put the subject right after the short
+format line; image models weigh early words most.
 
 1. Format: "YouTube thumbnail, 16:9, hyper-saturated, high contrast"
 2. Subject: who or what, exact emotion, pose, where in the frame (left third, right third, center), how close (tight close-up, chest-up)
@@ -35,15 +35,22 @@ weigh early words most.
 | Tool | Aspect ratio | Notes |
 | --- | --- | --- |
 | Midjourney | append `--ar 16:9 --style raw --v 7` (use the latest version) | `--style raw` keeps it less painterly; add `--s 50` to `--s 250` for stylization |
-| DALL-E / ChatGPT images | ask for "landscape 16:9" or 1792x1024 | follows long natural-language prompts well |
+| DALL-E / ChatGPT images | ask for "landscape 16:9" (1792x1024 is close; `thumbnail.py` crops to exact 16:9, so keep the subject away from the edges) | follows long natural-language prompts well |
 | Flux | set width 1344, height 768 | strong on photorealism and hands |
 | Stable Diffusion / SDXL | 1344x768; negative prompt: "text, watermark, logo, blurry, muted colors, cluttered background, extra fingers" | use a face-detail pass or inpainting on the face |
 | Ideogram | 16:9 | best of the group if you must render text in the image |
+| Nano Banana Pro (Gemini image, Google AI Studio) | set aspect ratio to 16:9 in the run settings | accepts a reference photo of the user's face and renders short text like "$1 vs $1,000,000" well; check spelling anyway |
+
+## Iterate on the render
+
+- Critique each render against the self-check in SKILL.md and regenerate. The usual first-try failure is a comparison where both sides look alike: make the cheap side visibly worse (small, rusty, dull, cracked) and the expensive side visibly better (huge, gold, glowing).
+- If you reuse one long system prompt, do not hard-code a single background color in it. Every thumbnail will come out with the same scheme. Pick the palette per concept from its stakes.
+- Each render costs credits. Fix the prompt before regenerating instead of rerolling the same one.
 
 ## Using a real face
 
 - Best: photograph the real person with the exact expression, cut them out (remove.bg, Photoshop, or `rembg`), and composite them onto generated art.
-- With image editing tools that accept a reference photo, pass the user's photo and describe the expression change.
+- With image tools that accept a reference photo (Nano Banana Pro, ChatGPT images), attach a clear front-facing photo of the user and describe the expression change ("same person, mouth open in shock, eyes wide"). Without the photo the model invents a stranger.
 - Never generate a real celebrity or public figure without permission.
 
 ## Using game art
