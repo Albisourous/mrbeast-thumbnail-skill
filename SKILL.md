@@ -10,7 +10,7 @@ description: |
   1280x720 image.
 license: MIT
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # MrBeast thumbnail skill
@@ -24,6 +24,7 @@ almost no text.
 Read this file once. Open a reference only when the task needs it:
 
 - [references/packaging-rules.md](references/packaging-rules.md): the full rulebook, archetypes, and color guide.
+- [references/production-handbook.md](references/production-handbook.md): lessons from MrBeast's leaked production handbook on CTR, titles, formats, and the minute-by-minute retention plan.
 - [references/image-prompts.md](references/image-prompts.md): prompt recipes for Midjourney, DALL-E, Flux, Stable Diffusion, and Ideogram.
 - [references/projects-and-games.md](references/projects-and-games.md): adapting the system to games, apps, repos, and store pages.
 - [scripts/thumbnail.py](scripts/thumbnail.py): crop to 16:9, add stroked text, and render a phone-size preview.
@@ -55,6 +56,12 @@ pay off.
 | Financial shock or extreme stakes | "What would I do?" | stacks of cash, a life-changing win or loss |
 | Bizarre action (the ketchup rule) | "Why would anyone do that?" | sitting in a bathtub of ketchup, not a front yard |
 
+Check the idea before packaging it. The same effort can produce a front
+yard video or a ketchup bathtub video, and only one of them gets clicked.
+If no variant would make you click, suggest a stronger angle on the idea
+first. Keep it simple enough that a teenager anywhere in the world gets
+it at a glance.
+
 Every project has a number: days, hours, dollars, players, levels,
 enemies, lines of code, percent. Use it. A viewer can picture "100
 Players" in a glance; "This changes everything" gives them nothing to
@@ -69,7 +76,8 @@ ready to make. Use this format:
 ```markdown
 ### Variant 1: <Archetype or theme name>
 
-- **Title:** <50 characters max, active voice, a question or a big hook>
+- **Title:** <50 characters max, active voice, the most extreme honest verb ("I Survived", not "I Spent")>
+- **Format:** <last to leave, stair stepping, chase, versus, challenge, or none>
 - **Hook:** <one sentence on why a brain wants to click this layout>
 - **Thumbnail text:** <0 to 4 words, or "none". Must add context, never repeat the title>
 - **Visual composition (3 elements max):**
@@ -79,6 +87,7 @@ ready to make. Use this format:
 - **Color and lighting:** <1 or 2 hero colors, complementary background, rim light, saturation>
 - **AI image prompt:** <one paragraph, 16:9, ready to paste. See references/image-prompts.md>
 - **First 5 seconds:** <what the video, trailer, or store page shows first to pay off this thumbnail>
+- **Retention plan:** <only for a full video: first minute, re-engagement near 3:00, payoff at the end. See references/production-handbook.md>
 ```
 
 Then recommend which variant to test first and why, and suggest the
@@ -94,7 +103,7 @@ Reject and rewrite any variant that fails one of these:
 - [ ] One emotion, readable from across a room.
 - [ ] A concrete stake or number is visible or implied.
 - [ ] Thumbnail text is 4 words or fewer and does not repeat the title.
-- [ ] Title is 50 characters or fewer.
+- [ ] Title is 50 characters or fewer and every claim in it is true. If a thumbnail shows a yellow castle, the video shows a yellow castle.
 - [ ] Still readable at phone feed size (about 200x113 px).
 - [ ] The video, game, or page delivers the promise in the first 5 seconds. Viewers who feel tricked leave, and retention drops.
 - [ ] The 3 variants look different from each other. Three takes on one shocked face count as one variant.
