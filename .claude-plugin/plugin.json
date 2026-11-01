@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "mrbeast-thumbnail-skill",
+  "version": "0.1.0",
+  "description": "MrBeast-style YouTube thumbnail generator: plan high-CTR thumbnails, titles, and AI image prompts for any video, game, or project.",
+  "author": {
+    "name": "Albisourous",
+    "url": "https://github.com/Albisourous"
+  },
+  "homepage": "https://github.com/Albisourous/mrbeast-thumbnail-skill",
+  "repository": "https://github.com/Albisourous/mrbeast-thumbnail-skill",
+  "license": "MIT",
+  "keywords": [
+    "youtube-thumbnail",
+    "mrbeast",
+    "thumbnail-generator",
+    "youtube",
+    "ctr",
+    "ai-image-prompts",
+    "midjourney",
+    "game-marketing",
+    "agent-skill",
+    "claude-code"
+  ],
+  "skills": [
+    "./"
+  ]
+}
