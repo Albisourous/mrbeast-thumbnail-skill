@@ -1,5 +1,7 @@
 # MrBeast Thumbnail Skill
 
+[![skills.sh](https://skills.sh/b/Albisourous/mrbeast-thumbnail-skill)](https://skills.sh/Albisourous/mrbeast-thumbnail-skill)
+
 An AI agent skill that makes MrBeast-style YouTube thumbnails, titles, and AI image prompts for any video, game, app, or project.
 
 Give it an idea or a script, or point it at a repo. It returns 3 finished packaging variants built on the rules MrBeast's team made famous: one focal subject, one loud emotion, a concrete stake, saturated color, and almost no text. Each variant has a title, a 3-element layout, a color plan, a ready-to-paste Midjourney / DALL-E / Flux prompt, and the first 5 seconds the content needs to pay off the click. If your agent can generate images, it makes them too, then adds text and checks the result at phone size.
@@ -8,10 +10,17 @@ Works for YouTube thumbnails, game devlogs, trailers, Steam capsules, Roblox and
 
 ## Install
 
+```sh
+npx skills add Albisourous/mrbeast-thumbnail-skill
+```
+
+Works with Claude Code, Codex, Cursor, Devin, Windsurf, and 70+ other agents - it detects yours and installs there.
+
+Manual install per agent:
+
 | Agent | Install |
 |---|---|
 | Claude Code | `/plugin marketplace add Albisourous/mrbeast-thumbnail-skill`, then install `mrbeast-thumbnail-skill` |
-| Codex, Cursor, others | `npx skills add Albisourous/mrbeast-thumbnail-skill` |
 | Devin | Copy `SKILL.md`, `references/`, and `scripts/` into `.devin/skills/mrbeast-thumbnail-skill/` |
 | Any agent that reads skills | Copy `SKILL.md`, `references/`, and `scripts/` into its skill directory |
 
